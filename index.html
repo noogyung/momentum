@@ -8,17 +8,30 @@
         <title>Momentum</title>
     </head>
     <body>
+        <h1 id="week" class="customFont">UNKNOWNS</h1>
+        <h2 id="clock" class="customFont">
+            <span id="month"></span>
+            <span id="date"></span>
+            <span id="time">00:00:00</span>
+        </h2>
+
         <form id="login-form">
             <input required maxlength="15" type="text" placeholder="What is your name?"/>
             <input type="submit" value="Log In"/>
         </form>
-        <h1 id="clock">00:00:00</h1>
-        <h2 id="greeting" class="hidden"></h2>
-        <form id="todo-form">
-            <input type="text" placeholder="Write a To Do">
-        </form>
-        <ul id="todo-list"></ul>
+
+        <h3 id="greeting" class="hidden"></h3>
+        <div id="todos">
+            <form id="todo-form">
+                <input type="text" placeholder="Write a To Do">
+            </form>
+            <ul id="todo-list"></ul>    
+        </div>
         <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+        <div id="weather">
             <span></span>
             <span></span>
         </div>
